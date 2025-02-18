@@ -1,6 +1,3 @@
-#include <iostream>
-#include <set>
-#include <vector>
 class Solution {
 public:
     int removeDuplicates(std::vector<int>& nums) {
@@ -13,14 +10,3 @@ public:
        return res.size();
     }
 };
-
-int main(){
-    std::vector<int> nums;
-    nums.push_back(1);
-    nums.push_back(1);
-    nums.push_back(1);
-    nums.push_back(1);
-    nums.push_back(2);
-    Solution sol;
-    std::cout << sol.removeDuplicates(nums) << std::endl;
-}
